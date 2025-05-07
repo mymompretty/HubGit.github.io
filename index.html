@@ -1,58 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>눈뽕텍스트</title>
+  <title>시험에 나오는 문제 유형</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
-      background-size: 400% 400%;
-      animation: gradient 10s ease infinite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Courier New', monospace;
+      font-family: sans-serif;
+      background-color: #fdf6e3;
+      color: #333;
+      padding: 50px;
+      text-align: center;
     }
 
     h1 {
-      color: #fff;
-      font-size: 4rem;
-      text-shadow: 
-        0 0 5px #fff,
-        0 0 10px #0ff,
-        0 0 20px #0ff,
-        0 0 40px #0ff,
-        0 0 80px #0ff;
-      animation: glow 2s ease-in-out infinite alternate;
+      margin-bottom: 30px;
     }
 
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    .type-list {
+      display: inline-block;
+      text-align: left;
+      background-color: #fff8dc;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
-    @keyframes glow {
-      from {
-        text-shadow: 
-          0 0 5px #fff,
-          0 0 10px #0ff,
-          0 0 20px #0ff;
-      }
-      to {
-        text-shadow: 
-          0 0 20px #0ff,
-          0 0 30px #0ff,
-          0 0 40px #0ff,
-          0 0 50px #0ff;
-      }
+    .type-list p {
+      font-size: 18px;
+      margin: 12px 0;
     }
   </style>
 </head>
 <body>
-  <h1>앗 내눈</h1>
+
+  <h1>📘 시험에 자주 나오는 문제 유형</h1>
+
+  <div class="type-list">
+    <p>- 수학 유형은 이차함수입니다.</p>
+    <p>- 영어 유형은 빈칸 추론입니다.</p>
+    <p>- 국어 유형은 고전 문학 해석입니다.</p>
+    <p>- 사회 유형은 그래프 분석입니다.</p>
+    <p>- 과학 유형은 실험 결과 해석입니다.</p>
+    <p>- 역사 유형은 연도 순 배열입니다.</p>
+  </div>
+
 </body>
 </html>
-
